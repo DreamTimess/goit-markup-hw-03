@@ -1,0 +1,209 @@
+:root {
+    --basic-header-background-color: #FFFFFF;
+    --second-color-background-color: #F5F4FA;
+    --basic-footer-background-color: #2F303A;
+    --main-text-color:#212121;
+    --second-text-color:#757575;
+    --white-text-color:#FFFFFF;
+    --color-hover:#2196F3;
+    --filter-background-color:#F5F4FA;
+}
+
+/* Глобальные стили */
+
+body {
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    background-color: var(--basic-header-background-color);
+    color: var(--main-text-color);
+}
+
+/* Класовые стили */
+/* Шапка */
+
+.header-logo {
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000;
+    text-decoration: none;
+}
+
+.header-logo-web {
+    color: #2196F3;
+}
+
+.header-navigation-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    list-style: none;
+}
+
+.nav {
+    color: var(--main-text-color);
+}
+
+.active-page {
+    color: var(--color-hover);
+    text-decoration: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover,
+.link:focus,
+.link:active {
+    color: var(--color-hover)
+}
+
+.contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    list-style: none;
+
+}
+/* Основной блок */
+.main-order {
+    background-color: var(--basic-footer-background-color);
+}
+.main-order-h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-text-color);
+}
+.main-order-button {
+    cursor: pointer;
+    background: var(--color-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px; 
+    font-family: inherit;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+}
+.style-list {
+    list-style: none;
+}
+
+.main-better-h2,
+.hidden-h1 {
+    display: none;
+}
+
+.main-batter-h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.main-batter-p { 
+    color: var(--second-text-color);
+}
+
+.main-work-h2,
+.main-people-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.main-people {
+    background-color: var(--second-color-background-color);
+}
+
+.main-people-h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}
+
+.main-people-p {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
+
+/* Подвал */
+.footer {
+    background-color: var(--basic-footer-background-color);
+}
+
+.header-logo-footer {
+    color:var(--white-text-color)
+}
+
+.footer-list-map {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-text-color);
+}
+
+.footer-list-mail,
+.footer-list-tel{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* portfolio.html */
+.filter {
+    cursor: pointer;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    background-color: var(--filter-background-color);
+    border-radius: 4px;
+}
+
+.filter:hover,
+.filter:focus,
+.filter:active {
+    background-color: var(--color-hover);
+    color: var(--white-text-color)
+}
+
+.main-our-work-h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--main-text-color);
+
+}
+
+.main-our-work-p {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--second-text-color);
+}
