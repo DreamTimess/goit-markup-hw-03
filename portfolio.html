@@ -8,103 +8,110 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="./css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <!--Шапка-->
     <header class="header">
-      <nav class="header-navigation">
+      <div class="container footer-container">
+        <nav class="header-navigation">
         <a class="header-logo" href=""><span class="header-logo-web">Web</span>Studio</a>
-        <ul class="header-navigation">
+        <ul class="header-navigation-list">
           <li class="header-navigation-list"><a class="link nav" href="./index.html">Студія</a></li>
           <li class="header-navigation-list"><a class="active-page nav" href="./portfolio.html">Портфоліо</a></li>
           <li class="header-navigation-list"><a class="link nav" href="">Контакти</a></li>
         </ul>
-      </nav>
-      <ul class="header-contacts-list">
-        <li class="style-list"><a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="style-list"><a class="link contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
-      </ul>
+        </nav>
+        <ul class="header-contacts-list">
+        <li class="contacts"><a class="link contacts" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="contacts indent"><a class="link contacts" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </div>
     </header>
     <!--Фильтр-->
     <main class="main">
         <section class="main-work">
+          <div class="container">
           <h1 class="hidden-h1">Фінальні проекти</h1>
           <ul class="main-filter-list">
-            <li class="style-list"><button class="link filter" type="button">Усі</button></li>
-            <li class="style-list"><button class="link filter" type="button">Веб-сайти</button></li>
-            <li class="style-list"><button class="link filter" type="button">Додатки</button></li>
-            <li class="style-list"><button class="link filter" type="button">Дизайн</button></li>
-            <li class="style-list"><button class="link filter" type="button">Маркетинг</button></li>
+            <li class="style-list-filter"><button class="link-filter" type="button">Усі</button></li>
+            <li class="style-list-filter"><button class="link-filter" type="button">Веб-сайти</button></li>
+            <li class="style-list-filter"><button class="link-filter" type="button">Додатки</button></li>
+            <li class="style-list-filter"><button class="link-filter" type="button">Дизайн</button></li>
+            <li class="style-list-filter"><button class="link-filter" type="button">Маркетинг</button></li>
           </ul>
-          <ul class="main-work-list">
-            <li class="style-list">
+          <ul class="work-list">
+            <li class="style-work-list">
               <a class="link" href="#">
               <img src="./images/work1.jpg" alt="Технокряк">
               <h2 class="main-our-work-h2 link">Технокряк</h2>
               <p class="main-our-work-p link">Веб-сайт</p></a> 
             </li>
-            <li class="style-list">
+            <li class="style-work-list">
               <a class="link" href="#">
               <img src="./images/work2.jpg" alt="Постер">
               <h2 class="main-our-work-h2 link">Постер New Orlean vs Golden Star</h2>
               <p class="main-our-work-p link">Дизайн</p></a> 
             </li>
-            <li class="style-list">
+            <li class="style-work-list">
               <a class="link" href="#">
               <img src="./images/work3.jpg" alt="Ресторан Seafood">
               <h2 class="main-our-work-h2 link">Ресторан Seafood</h2>
               <p class="main-our-work-p link">Додаток</p></a> 
             </li>
-            <li class="style-list">
+            <li class="style-work-list">
               <a class="link" href="#">
               <img src="./images/work4.jpg" alt="Проєкт Prime">
               <h2 class="main-our-work-h2 link">Проєкт Prime</h2>
               <p class="main-our-work-p link">Маркетинг</p></a> 
             </li>
-            <li class="style-list">
+            <li class="style-work-list">
               <a class="link" href="#">
               <img src="./images/work5.jpg" alt="Проєкт Boxes">
               <h2 class="main-our-work-h2 link">Проєкт Boxes</h2>
               <p class="main-our-work-p link">Додаток</p></a> 
             </li>
-            <li class="style-list">
+            <li class="style-work-list">
               <a class="link" href="#">
               <img src="./images/work6.jpg" alt="Inspiration has no Borders">
               <h2 class="main-our-work-h2 link">Inspiration has no Borders</h2>
               <p class="main-our-work-p link">Веб-сайт</p></a> 
             </li>
-            <li class="style-list">
+            <li class="style-work-list">
               <a class="link" href="#">
               <img src="./images/work7.jpg" alt="Видання Limited Edition">
               <h2 class="main-our-work-h2 link">Видання Limited Edition</h2>
               <p class="main-our-work-p link">Дизайн</p></a> 
             </li>
-            <li class="style-list">
+            <li class="style-work-list">
               <a class="link" href="#">
               <img src="./images/work8.jpg" alt="Проєкт LAB">
               <h2 class="main-our-work-h2 link">Проєкт LAB</h2>
               <p class="main-our-work-p link">Маркетинг</p></a> 
             </li>
-            <li class="style-list">
+            <li class="style-work-list">
               <a class="link" href="#">
               <img src="./images/work9.jpg" alt="Growing Business">
               <h2 class="main-our-work-h2 link">Growing Business</h2>
               <p class="main-our-work-p link">Додаток</p></a> 
             </li>
           </ul>
+        </div>
       </section>
       </main>
   <!--Подвал-->
-    <footer class="footer">
+<footer class="footer">
+      <div class="container footer">
        <a class="header-logo header-logo-footer" href=""><span class="header-logo-web">Web</span>Studio</a>
-    <address>
+    <address class="address-font-style">
       <ul class="footer-list">
-        <li class="style-list"><a class="footer-list-map link" href="https://goo.gl/maps/4TLf4897QTm32brY9" target="_blank" rel="noreferrer noopener">м. Київ, пр-т Лесі Українки, 26</a></li>
-        <li class="style-list"><a class="footer-list-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="style-list"><a class="footer-list-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li class="style-list-footer"><a class="footer-list-map link" href="https://goo.gl/maps/4TLf4897QTm32brY9" target="_blank" rel="noreferrer noopener">м. Київ, пр-т Лесі Українки, 26</a></li>
+        <li class="style-list-footer"><a class="footer-list-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="style-list-footer"><a class="footer-list-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </address>
+    </div>
     </footer>
   </body>
 </html>

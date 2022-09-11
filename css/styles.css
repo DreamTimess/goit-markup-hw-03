@@ -36,18 +36,25 @@ body {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    outline: #757575 solid; 
+    /* outline: #757575 solid;  */
 }
 
 /* Шапка */
+
 
 .footer-container {
     display:flex;
     align-items:center;
 }
 
+.container.footer-container {
+    justify-content: space-between;
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header-navigation {
     display: flex;
+    
 }
 
 .header-logo { /* В шапке и подвале */
@@ -188,7 +195,7 @@ background-color: var(--basic-footer-background-color);
 
 .main-batter-ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0;
 }
 
@@ -214,7 +221,7 @@ background-color: var(--basic-footer-background-color);
 
 .style-list:nth-child(n+2),
 .style-list-personal:nth-child(n+2){
-    padding-left:30px ;
+    margin-left:30px ;
 }
 
 .main-work-h2 {
@@ -255,8 +262,11 @@ background-color: var(--basic-footer-background-color);
 }
 
 .style-list-personal {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     list-style: none;
-    padding-bottom: 94px;
+    margin-bottom: 94px;
 
 }
 
@@ -266,17 +276,22 @@ background-color: var(--basic-footer-background-color);
 }
 
 .main-people-h3 {
+    text-align: center;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    margin-top: 30px;
 }
 
 .main-people-p {
+    text-align: center;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 /* Подвал */
@@ -322,9 +337,13 @@ background-color: var(--basic-footer-background-color);
     color: rgba(255, 255, 255, 0.6);
 }
 
-/* portfolio.html */
+/* portfolio */
 
-.filter {
+.style-list-filter {
+    list-style: none;
+}
+
+.link-filter {
     cursor: pointer;
     font-family: inherit;
     font-weight: 500;
@@ -333,13 +352,48 @@ background-color: var(--basic-footer-background-color);
     letter-spacing: 0.03em;
     background-color: var(--filter-background-color);
     border-radius: 4px;
+    text-decoration: none;
 }
 
-.filter:hover,
-.filter:focus,
-.filter:active {
+.link-filter:hover,
+.link-filter:focus,
+.link-filter:active {
     background-color: var(--color-hover);
     color: var(--white-text-color)
+}
+
+.main-filter-list {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.style-list-filter:nth-child(n+2) {
+    margin-left: 8px;
+}
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 0;
+    padding-bottom: 94px;
+}
+
+.style-work-list {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    list-style: none;
+}
+
+.style-work-list:nth-child(3n+2),
+.style-work-list:nth-child(3n+3) {
+    margin-left: 30px;
+
+}
+
+.style-work-list:nth-child(n+4) {
+    margin-top: 30px;
 }
 
 .main-our-work-h2 {
@@ -348,6 +402,7 @@ background-color: var(--basic-footer-background-color);
     line-height: 2;
     letter-spacing: 0.06em;
     color: var(--main-text-color);
+    padding-left: 24px;
 
 }
 
@@ -356,4 +411,6 @@ background-color: var(--basic-footer-background-color);
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+    padding-left: 24px;
+    padding-bottom: 20px;
 }
