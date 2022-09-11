@@ -10,7 +10,6 @@
 }
 
 /* Глобальные стили */
-
  h1,
  h2,
  h3,
@@ -21,7 +20,6 @@
  ul {
     margin: 0;
 }
-
 
 body {
     font-family: 'Roboto',sans-serif;
@@ -41,8 +39,6 @@ body {
     outline: #757575 solid; 
 }
 
-
-/* Класовые стили */
 /* Шапка */
 
 .footer-container {
@@ -54,7 +50,7 @@ body {
     display: flex;
 }
 
-.header-logo {
+.header-logo { /* В шапке и подвале */
     font-family: 'Raleway',sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -129,8 +125,6 @@ body {
 }
 
 /* Основной блок */
-
-
 
 .container.order {
 display: block;
@@ -329,6 +323,7 @@ background-color: var(--basic-footer-background-color);
 }
 
 /* portfolio.html */
+
 .filter {
     cursor: pointer;
     font-family: inherit;
