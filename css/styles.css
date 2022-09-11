@@ -11,6 +11,18 @@
 
 /* Глобальные стили */
 
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p,
+ ul {
+    margin: 0;
+}
+
+
 body {
     font-family: 'Roboto',sans-serif;
     font-size: 14px;
@@ -21,9 +33,14 @@ body {
 }
 
 .container {
-  width: 1600px;
-  outline: #757575 solid; 
+    width: 1200px; /* Оригинал 1600px [Контент 1200px] */
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: #757575 solid; 
 }
+
 
 /* Класовые стили */
 /* Шапка */
@@ -45,8 +62,10 @@ body {
     letter-spacing: 0.03em;
     color: #000;
     text-decoration: none;
+
     margin: auto;
-    margin-left: 215px;
+    margin-right: 33px;
+    
     
 }
 
@@ -69,6 +88,8 @@ body {
 }
 
 .nav {
+    padding-top: 32px;
+    padding-bottom: 32px;
     color: var(--main-text-color);
 }
 
@@ -99,6 +120,8 @@ body {
     letter-spacing: 0.02em;
     color: var(--second-text-color);
     list-style: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contacts.indent {
@@ -107,10 +130,12 @@ body {
 
 /* Основной блок */
 
-.main-order {
-    background-color: var(--basic-footer-background-color);
-    width: 1600px;
-    display: inline-block;
+
+
+.container.order {
+display: block;
+background-color: var(--basic-footer-background-color);
+
 }
 
 .main-order-h1 {
@@ -137,23 +162,30 @@ body {
     line-height: 1.88;
     letter-spacing: 0.06em;
     color: var(--white-text-color);
+    width: 216px;
+    height: 50px;
     display:block;
     margin: auto;
     margin-top: 30px;
-    margin-bottom: 200px;
-    
+    padding: 0;
+    border: 0;
+}
+
+.main-div-button {
+    padding-bottom: 200px;
 }
 
 .style-list {
     list-style: none;
-    padding-top: 95px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
 }
 
 .style-list-work {
     list-style: none;
-    padding-top: 95px;
-    padding-bottom: 95px;
+    padding-top: 50px;
+    padding-bottom: 94px;
 }
 
 .style-list-work:nth-child(1n+2) {
@@ -162,12 +194,11 @@ body {
 
 .main-batter-ul {
     display: flex;
+    justify-content: space-around;
     padding: 0;
 }
 
-.style-list.first {
-    margin-left: 215px;
-}
+
 
 .main-better-h2,
 .hidden-h1 {
@@ -187,18 +218,28 @@ body {
     width: 270px;
 }
 
-.style-list:nth-child(n+2){
+.style-list:nth-child(n+2),
+.style-list-personal:nth-child(n+2){
     padding-left:30px ;
 }
 
-.main-work-h2,
+.main-work-h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+
+
 .main-people-h2 {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    padding-top: 95px;
+    padding-top: 94px;
     margin: 0;
 }
 
@@ -207,7 +248,7 @@ body {
     padding: 0;
     margin-top: 0;
     margin-bottom: 0;
-    margin-left: 215px;
+    
 }
 
 .main-people-list {
@@ -215,15 +256,19 @@ body {
     margin: 0;
     padding: 0;
     padding-top: 50px;
-    padding-bottom: 90px;
+    justify-content: space-around
+    
 }
 
-.main-people {
+.style-list-personal {
+    list-style: none;
+    padding-bottom: 94px;
+
+}
+
+
+.container.people {
     background-color: var(--second-color-background-color);
-}
-
-.style-list.first {
-    margin-left: 215px;
 }
 
 .main-people-h3 {
@@ -241,9 +286,10 @@ body {
 }
 
 /* Подвал */
-.footer {
+
+.container.footer {
+    display: block;
     background-color: var(--basic-footer-background-color);
-    width: 1600px;
 }
 
 .footer-list {
@@ -270,7 +316,7 @@ body {
 
 .style-list-footer {
     list-style: none;
-    margin-left: 215px;
+
 }
 
 .footer-list-mail,
