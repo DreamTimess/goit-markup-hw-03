@@ -51,15 +51,15 @@ body {
 
 /* Шапка */
 
+.header {
+    border-bottom: 1px solid var(--border-color);
+}
 
 .footer-container {
     display:flex;
     align-items:center;
 }
 
-.container.footer-container {
-    border-bottom: 1px solid var(--border-color);
-}
 
 .header-navigation {
     display: flex;
@@ -117,7 +117,7 @@ body {
 .header-contacts-list {
     display: flex;
     padding: 0;
-    margin-left: 344px;
+    margin-left: auto;
     gap: 50px;
 }
 
@@ -137,9 +137,6 @@ body {
 .main-order {
     background-color: var(--basic-footer-background-color);
     text-align: center;
-}
-
-.container.order {
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -186,10 +183,11 @@ body {
     margin-left: 50px;
 }
 
-.container.better {
+.main-better {
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 
 .main-batter-ul {
     display: flex;
@@ -214,13 +212,13 @@ body {
 
 .main-batter-p { 
     color: var(--second-text-color);
-    width: 270px;
 }
 
-.style-list:nth-child(n+2),
-.style-list-personal:nth-child(n+2){
+.style-list:nth-child(n+2), 
+.style-list-personal:nth-child(n+2){ 
     margin-left:30px ;
 }
+
 
 .main-work {
     padding-bottom: 94px;
@@ -260,7 +258,6 @@ body {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     list-style: none;
-
 }
 
 .main-people {
@@ -295,11 +292,6 @@ body {
     padding-bottom: 60px;
 }
 
-
-.footer-list {
-    margin-top: 20px;
-}
-
 .header-logo-footer {
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -309,6 +301,10 @@ body {
     text-decoration: none;
     display: inline-block;
     color:var(--white-text-color)
+}
+
+.address-font-style {
+    margin-top: 20px;
 }
 
 .footer-list-map {
@@ -322,8 +318,10 @@ body {
 
 .style-list-footer {
     list-style: none;
-    padding-top: 9px;
+}
 
+.style-list-footer:nth-child(n+2) {
+    margin-top: 9px;
 }
 
 .footer-list-mail,
@@ -378,7 +376,6 @@ body {
 .work-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .style-work-list {
@@ -416,4 +413,5 @@ body {
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--second-text-color);
+    margin-top: 4px;
 }
