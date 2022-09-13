@@ -132,6 +132,15 @@ body {
     padding-bottom: 32px;
 }
 
+.contacts-list {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--second-text-color);
+    list-style: none;
+}
+
 /* Основной блок */
 
 .main-order {
@@ -180,7 +189,7 @@ body {
 }
 
 .style-list-work:nth-child(1n+2) {
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .main-better {
